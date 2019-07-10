@@ -1,0 +1,51 @@
+<div class="row">
+  <div class="col">
+    <mat-card>
+      <form (submit)="onRegister(registerForm)" #registerForm="ngForm">
+        <mat-form-field>
+          <input matInput type="text" name="name" ngModel required minlength="5" placeholder="Full name"
+            #name="ngModel">
+          <mat-error *ngIf="name.invalid">Please enter a name.</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Email</mat-label>
+          <input matInput type="email" placeholder="email" name="email" ngModel required #email="ngModel">
+          <mat-error *ngIf="email.invalid">Please enter valid email.</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Password</mat-label>
+          <input matInput [type]="showPassword ? 'text' : 'password'" placeholder="password" name="password" ngModel
+            required #password="ngModel">
+          <mat-icon matSuffix (click)="showPassword = !showPassword">{{showPassword? 'visibility' : 'visibility_off'}}
+          </mat-icon>
+          <mat-error *ngIf="password.invalid">Please enter valid email.</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Choose Gender</mat-label>
+          <mat-select name="gender" ngModel #gender="ngModel" required>
+            <mat-option disabled="true">--Gender--</mat-option>
+            <mat-option value="Male">Male</mat-option>
+            <mat-option value="Female">Female</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field>
+          <textarea matInput rows="1" name="address" ngModel required placeholder="Home Address"
+            #address="ngModel"></textarea>
+          <mat-error *ngIf="address.invalid">Please enter a valid address.</mat-error>
+        </mat-form-field>
+
+        <button mat-raised-button color="accent" type="submit">Register</button>
+      </form>
+
+      <div class="options">
+        <h6>Already Registered?</h6>
+        <a [routerLink]="['/login']">Login Here</a>
+      </div>
+    </mat-card>
+
+  </div>
+</div>

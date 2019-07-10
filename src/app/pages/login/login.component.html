@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col">
+    <mat-card>
+      <form (submit)="onLogin(loginForm)" #loginForm="ngForm">
+
+        <mat-form-field>
+          <mat-label>Email</mat-label>
+          <input matInput type="email" placeholder="email" name="email" ngModel required #email="ngModel">
+          <mat-error *ngIf="email.invalid">Please enter valid email.</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Password</mat-label>
+          <input matInput [type]="showPassword ? 'text' : 'password'" placeholder="password" name="password" ngModel
+            required #password="ngModel">
+          <mat-icon matSuffix (click)="showPassword = !showPassword">{{showPassword? 'visibility' : 'visibility_off'}}
+          </mat-icon>
+          <mat-error *ngIf="password.invalid">Please enter valid email.</mat-error>
+        </mat-form-field>
+
+        <!-- <button mat-raised-button color="accent" type="button" [routerLink]="['/register']">Register</button> -->
+        <button mat-raised-button color="accent" type="submit">Login</button>
+      </form>
+
+      <div class="options">
+          <h6>Don't have an account yet?</h6>
+          <a [routerLink]="['/register']">Register Here</a>
+        </div>
+    </mat-card>
+  </div>
+</div>

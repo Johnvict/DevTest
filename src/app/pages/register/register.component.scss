@@ -1,0 +1,9 @@
+@media(max-width: 768px) {
+  mat-card {
+    margin-top: calc(100% - 90%);
+    top: calc(100% - 80%);
+    width: 95%;
+    margin:auto;
+  }
+}
+

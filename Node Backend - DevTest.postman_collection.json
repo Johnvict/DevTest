@@ -1,0 +1,225 @@
+{
+	"info": {
+		"_postman_id": "2631cd41-bb88-49ec-a674-0e04b28cb682",
+		"name": "Node Backend - DevTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Available Loans",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/loans",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"loans"
+					]
+				},
+				"description": "Obtain Available Loans from the Node Backend"
+			},
+			"response": []
+		},
+		{
+			"name": "Register  New User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Olamibo Oluwadamilola Johnvict\",\n\t\"email\": \"official.johnvict@gmail.com\",\n\t\"address\": \"Akure, Ondo State\",\n\t\"gender\": \"male\",\n\t\"password\": \"123abcZ\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user-register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user-register"
+					]
+				},
+				"description": "Obtain Available Loans from the Node Backend"
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"official.johnvict@gmail.com\",\n\t\"password\": \"123abcZ\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user-login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user-login"
+					]
+				},
+				"description": "Obtain Available Loans from the Node Backend"
+			},
+			"response": []
+		},
+		{
+			"name": "Logout User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "devtest qlOwUHUdoCgtTfOoOwdjzywseIoIBYEAQhoWDkkLczkhOgufbUiURnUbrCHfGamwWbWCYRXIulSVXESIWhPDXuoOSXmQnjjwpyur",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"johnvict@devtest.com\",\n\t\"password\": \"123456\",\n\t\"gender\": \"male\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"logout"
+					]
+				},
+				"description": "Obtain Available Loans from the Node Backend"
+			},
+			"response": []
+		},
+		{
+			"name": "Check Auth",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "devtest AoSuhcCSMWTpFyFXyplwjVERTknclqRbNFcOcyfUTHOZfdoWxgmpTMjDqZdOGzcAitLLoAmhrWChbJkHugbZXqUTjBXNoLKEDKjM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/auth-check",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"auth-check"
+					]
+				},
+				"description": "Obtain Available Loans from the Node Backend"
+			},
+			"response": []
+		},
+		{
+			"name": "Apply For Loan",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "devtest AoSuhcCSMWTpFyFXyplwjVERTknclqRbNFcOcyfUTHOZfdoWxgmpTMjDqZdOGzcAitLLoAmhrWChbJkHugbZXqUTjBXNoLKEDKjM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"userId\": 1,\n \"loanId\": 1,\n \"start\": 1562766336554,\n \"end\": 1570057200000\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/loan-apply",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"loan-apply"
+					]
+				},
+				"description": "Obtain Available Loans from the Node Backend"
+			},
+			"response": []
+		}
+	]
+}

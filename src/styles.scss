@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+mat-card {
+  width: 50%;
+  margin:auto;
+}
+
+mat-form-field, input {
+  width: 100%;
+}
+
+.inform {
+  text-align: center;
+  margin: 20px;
+}
+
+.applyForm {
+  padding: 20px;
+  margin: 30px;
+}
+
+.options {
+  text-align: center;
+  font-weight: 600;
+  a {
+    // text-decoration: none;
+    color: rgb(58, 57, 57);
+  }
+  a:hover, a:active {
+    color: #3F51B5
+  }
+}
+
+.mat-snack-bar-container {
+  // color: rgba(255,255,255,.7);
+  background: #3F51B5;
+}
