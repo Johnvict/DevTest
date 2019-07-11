@@ -2,9 +2,11 @@ import { Injectable } from '@angular/core';
 import { Subject, Observable} from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { MatSnackBar } from '@angular/material';
+
 @Injectable({ providedIn: 'root' })
 export class MasterProvider {
-  url = 'http://localhost:3000/api/';
+  // url = 'http://localhost:3000/api/';
+  url = 'https://back.devtest.my-backend.com.ng/api/';
   options: any;
 
   public toastTitle: string;
@@ -16,6 +18,7 @@ export class MasterProvider {
     private snackBar: MatSnackBar
   ) {
     this.createNewHeader();
+    console.log(this.url);
   }
 
   createNewHeader() {

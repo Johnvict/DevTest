@@ -1,13 +1,13 @@
 # DevTest
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
 
-##Author
+## Author
  <a href="https://twitter.com/@_johnvict">@_Johnvict</a>
 
 ## Backend
 The app consumes Node server
 
-##Reproduction Guide
+## Reproduction Guide
 Clone or Download the repository to any directory of your choice on your local machine and cd into your project directory
   To install dependences run below command
   $ npm install

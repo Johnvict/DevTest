@@ -1,10 +1,11 @@
-.table {
-  width: 95%;
-  margin: auto;
-  margin-top: 20px;
-}
+  .table {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+  }
 
-table {
+  table {
+  overflow-x: scroll;
   width: 100%;
 }
 
@@ -12,3 +13,4 @@ table {
   margin-top: 20px;
   margin-left: calc(100% - 95%);
 }
+

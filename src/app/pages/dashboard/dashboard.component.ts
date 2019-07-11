@@ -8,7 +8,8 @@ import { DataProcessorService } from '../../providers/data-processor.service';
 import { MasterProvider } from '../../providers/masterprovider.service';
 import { BehaviorSubject, Observable, Subscription } from 'rxjs';
 
-import * as _moment from 'moment';
+// import * as _moment from 'moment';
+
 // tslint:disable-next-line:no-duplicate-imports
 // import {default as _rollupMoment} from 'moment';
 // const moment = _rollupMoment || _moment;
