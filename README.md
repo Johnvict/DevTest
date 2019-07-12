@@ -2,7 +2,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
 
 ## Author
- <a href="https://twitter.com/@_johnvict">@_Johnvict</a>
+ [@_Johnvict](https://twitter.com/@_johnvict").
 
 ## Backend
 The app consumes Node server
@@ -16,6 +16,8 @@ Clone or Download the repository to any directory of your choice on your local m
 
   To start server run `npm run start:server` which starts the api backend server at `http://localhost:3000/`
 
+## Demo
+Check out online demo [Here](https://devtest.my-backend.com.ng).
 
 ## Build
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
